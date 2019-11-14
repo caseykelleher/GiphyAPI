@@ -1,27 +1,70 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>GIPHY API</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
         <link rel="stylesheet" href="../GiphyAPI/assets/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     </head>
     <body>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button data-person="Lucille Ball">
-            Love yourself first and everything else falls into line.
-          </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-10">
+                        <div class="card bg-light">             
+                            <div class="card-body">
+                                <h1 class="card-title">My Favorite Movie Titles</h1>
+                                <h5 class="card-text">Search for your favorite movies to add to my list.</h5>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 col-xs-12 mb-2" id="giph-buttons">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h5>Select A Movie</h5>
+                            </div>
+                            <div class="card-body bg-secondary" id="movie-btn-div">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12 mb-2">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h5>Add your favorite movie</h5>
+                            </div>
+                        <div class="card-body bg-secondary">
+                                <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="American Gangster" aria-label="Search" id="movie-input">
+                                <button class="btn btn-dark my-2 my-sm-0" type="submit" id="submit-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
         
-        <script src="../GiphyAPI/assets/javascript/giphy.js"></script>
+        <script type="text/javascript" src="../GiphyAPI/assets/javascript/giphy.js"></script>
     </body>
 </html>
